@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                     if (nomes.contains(value.toLowerCase())) {
                       setState(() {
                         CharModel(null, value.toLowerCase())
-                            .createButton()
+                            .createButton(context)
                             .then((value) {
                           char = value;
                         });

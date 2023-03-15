@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:rpg_client/home/char_main_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
 
@@ -20,7 +21,6 @@ class CharModel {
       }
     }
     name?.replaceAll(" ", "-");
-
     final String response =
         await rootBundle.loadString('assets/personagens/$name.json');
     final data = await json.decode(response);
@@ -30,19 +30,22 @@ class CharModel {
 
   Future<String?> checkIfPlayerAlredyChoose() async {
     final db = await SharedPreferences.getInstance();
-
     return db.getString("char");
   }
 
-  Future<Widget> createButton() async {
+  Future<Widget> createButton(BuildContext context) async {
     await readJson();
     return Column(children: [
       GestureDetector(
         onTap: () async {
           final db = await SharedPreferences.getInstance();
           db.setString("char", name!);
-          
-          print("foi");
+          Navigator.pushAndRemoveUntil(
+              context,
+              MaterialPageRoute(
+                builder: (context) => CharMainPage(name!),
+              ),
+              ModalRoute.withName('/'));
         },
         child: SizedBox(
           width: 60.w,

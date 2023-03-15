@@ -1,18 +1,12 @@
-import 'dart:convert';
-import 'dart:math';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:rpg_client/home/home_page.dart';
 import 'package:rpg_client/util/char_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
 
 class CharMainPage extends StatefulWidget {
-  CharMainPage(String this.charName, {super.key});
-  String charName;
+  const CharMainPage(this.charName, {super.key});
+  final String charName;
   @override
   State<CharMainPage> createState() => _CharMainPageState();
 }
@@ -20,7 +14,6 @@ class CharMainPage extends StatefulWidget {
 class _CharMainPageState extends State<CharMainPage> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     initInformation();
   }
@@ -64,9 +57,8 @@ class _CharMainPageState extends State<CharMainPage> {
   };
 
   void initInformation() async {
-    info = await CharModel(widget.charName, null).readJson();
-    setState(() {
-      info = info;
+    setState(() async {
+      info = (await CharModel(widget.charName, null).readJson());
       if (info["efeitos"] != null) {
         var tempInfo = (info["efeitos"] as List);
         if (tempInfo.isNotEmpty) {
