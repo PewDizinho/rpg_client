@@ -1,0 +1,52 @@
+{
+  "name": "Sophie Lewis",
+  "idade": 18,
+  "altura": 1.6,
+  "vidaMax": 50,
+  "sanidadeMax": 35,
+  "genero": "Feminino",
+  "aparencia": "Estilo puxado para o y2K ou Acubi",
+  "historia": "Sophie Lewis nascida em 2005 na Itália, retornaram em 2011 ao país de origem de seus pais (Brasil), após terem concluído que sua presença e a de sua irmã gemea poderiam ser prejudiciais a eles, por serem mafiosos e se envolverem com pessoas perigosas de grande nível. Contudo, para proteger Sophie, seus pais a colocaram em aulas de Artes Marciais, e hoje em dia ela mora com sua avó",
+  "pericia": "Professora de luta",
+  "preferenciaDeCombate": "Corpo a corpo (Arma Branca: Soco inglês)",
+  "skills": [
+    {
+      "nome": "Foco Supremo",
+      "descricao": "- Caso um inimigo esteja Distraído/Prestando atenção em outro alvo, Sophie pode chegar por trás do inimigo e o jogando no chão, o alvo fica CAÍDO e IMOBILIZADO enquanto Sophie o segura, o alvo deve rodar um dado de força contra Sophie para se libertar (ou utilizar algum outro método criativo, estando propenso ao julgamento do Mestre, como realizar um ataque em área), o alvo fica VULNERÁVEL durante esse tempo"
+    }
+  ],
+  "habilidades": {
+    "Forca": 5,
+    "Furtividade": 0,
+    "Acrobacia": 0,
+    "Adestramento": 0,
+    "Atletismo": 5,
+    "Atualidades": 0,
+    "Ciencias": 0,
+    "Diplomacia": 0,
+    "Atuação": 0,
+    "Iniciativa": 5,
+    "Intuição": 0,
+    "Luta": 20,
+    "Medicina": 0,
+    "Pilotagem": 0,
+    "Percepcao": 0,
+    "Reflexo": 10,
+    "Sobrevivência": 0,
+    "Tatica": 10,
+    "Tecnologia": 0,
+    "Vontade": 10
+  },
+  "inventario": [
+    {
+      "name": "Soco Inglês Pessoal",
+      "tipoDeDano": "Físico - Impacto",
+      "dano": "1d3 (+ 1 por pontos de força)",
+      "aparencia": "Soco inglês preto, com um entalhe de caveira",
+      "peso": 0
+    }
+  ],
+  "avatarURL": [
+    "https://cdn.discordapp.com/attachments/1066920312807104624/1066920324572135484/317000398_3384809451765990_980999145497918654_n.png"
+  ]
+}

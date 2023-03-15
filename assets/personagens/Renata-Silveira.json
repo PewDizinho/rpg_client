@@ -1,0 +1,52 @@
+{
+  "name": "Renata Silveira",
+  "idade": 28,
+  "altura": 1.78,
+  "vidaMax": 70,
+  "sanidadeMax": 25,
+  "genero": "Feminino",
+  "aparencia": "Possui aparência robusta. Tem cabelos compridos, muito ondulados e volumosos de cor castanha com subtom mais avermelhado (como um cobre). Usa sempre Baggy jeans os jardineiras com blusas de manga curta simples com estampas (principalmente de bandas). Usa galochas, botas (não as chiques ou com salto, daquelas estilo de exército e coisas do gênero) ou butinas. Possui sempre uma mochila pequena onde carrega seus fones e alguns materiais como seus pequenos vidros e plásticos (ela adora coletar amostras de plantas e mudas para seu jardim e pesquisas), quando ela sai para explorar sempre possui seu cinto com suas ferramentas maiores de jardinagem, tesoura, pá pequena e etc. Varia entre usar cabelo solto e preso em um rabo de cavalo alto.",
+  "historia": "Ela se formou em Biologia e fez pós-graduações com foco em botânica e toxilogia. Antes de começarem seus estágios para a faculdade ela trabalhou como jardineira de sucesso em grandes residências com exuberantes jardins. Futuramente fez estágios em laboratórios e estufas de pesquisa sobre toxinas e os variados efeitos das plantas.  Acabou de terminar sua última formação e está aplicando para trabalhos em grandes estufas de pesquisas para criação de novas drogas (lícitas). Em seu tempo livre ela explora áreas verdes, cuida de seu jardim e treina em sua bateria, ela adora rock. Apesar de sua aparência robusta, devido a sua criação carinhosa e amorosa, ela é extremamente delicada e bondosa. Ela possui pavor de oceano e aguas profundas devido à um acidente na sua infância em que ela e seu irmão se afogaram, e apenas ela sobreviveu. Seu pai não aguentou lidar com a morte de seu irmão e acabou se afastando da família e divorciando da mãe. Além de seu grande medo, esse acidente teve consequências positivas pois agora ela é uma pessoa protetora. (Ela possui bastante força física, mas n sabe lutar, apenas é forte)",
+  "pericia": "Herbalista, Medicina",
+  "preferenciaDeCombate": "Corpo a corpo",
+  "skills": [
+    {
+      "nome": "Tratamento Natural [Passiva]",
+      "descricao": "- Renata consegue tratar envenenamentos, e criar rémedios que dão buff em: Velocidade, Força, Agilidade e Visão rodando 1d8, caso tire um número abaixo da DT, o efeito pode ser outro"
+    }
+  ],
+  "habilidades": {
+    "Forca": 15,
+    "Furtividade": 0,
+    "Acrobacia": 0,
+    "Adestramento": 10,
+    "Atletismo": 0,
+    "Atualidades": 0,
+    "Ciencias": 20,
+    "Diplomacia": 0,
+    "Atuação": 0,
+    "Iniciativa": 0,
+    "Intuição": 0,
+    "Luta": 0,
+    "Medicina": 20,
+    "Pilotagem": 0,
+    "Percepcao": 0,
+    "Reflexo": 0,
+    "Sobrevivência": 0,
+    "Tatica": 0,
+    "Tecnologia": 0,
+    "Vontade": 0
+  },
+  "inventario": [
+    {
+      "name": "Kit de plantas",
+      "tipoDeDano": "Suporte",
+      "dano": "Cura 1d8 se aplicado corretamente",
+      "aparencia": "Uma caixa cheia de produtos naturais que, após manipulados da forma correta pela Renata, pode realizar curas ou outros efeitos",
+      "peso": 0
+    }
+  ],
+  "avatarURL": [
+    "https://media.discordapp.net/attachments/1066920312807104624/1066943950931382302/298225666_760532212163802_6037993820615026429_n.png"
+  ]
+}

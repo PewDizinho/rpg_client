@@ -1,0 +1,52 @@
+{
+  "name": "Sheylon",
+  "idade": 21,
+  "altura": 1.75,
+  "vidaMax": 40,
+  "sanidadeMax": 50,
+  "genero": "Feminino",
+  "aparencia": "Uma versão feminina do Ekko com estilo cyberpunk",
+  "historia": "Sheylon nasceu no suburbio do RJ, no meio da favela ela creceu cercada pelo crime e violencia, o que a fez aprender a lutar pra se proteger e sobreviver, aos 12 anos acabou se envolvendo com o trafico e aos 14 passou a usar. Com 16, perdida e cansada da vida que levava, sheylon se encontrou em um centro de artes marcias o que a fez mudar de vida, conseguiu sair da favela e começou a morar e treinar na academia em troca de limpeza. Porém sua saida do trafico nao foi algo aceito pelo dono do morro e depois de 4 anos escondida no centro de treinamento o chefe a encontrou e a levou de volta ao morro. Como nao haviam a vista por 4 anos, as pessoas no morro nao sabiam que Sheylon tinha um talento extraordinario para artes marciais. Essa vantagem, junto com sua flexibilidade e agilidade a permitiram conseguir escapar em um momento que ninguem estava vendo. Sheylon foi direto para a rodoviaria e pegou o primeiro onibus que apareceu. Ela acabou indo para Curitiba, com nada alem de um punhado de dinheiro que havia pego dos traficantes antes de sair. Agora ela estava tentando se encaixar a nova cidade.",
+  "pericia": "Artes Marciais",
+  "preferenciaDeCombate": "Corpo a corpo",
+  "skills": [
+    {
+      "nome": "Golpe de Misericórdia",
+      "descricao": "- Sheylon gasta uma rodada analisando o alvo, então roda 1d20 para ver se o alvo está com menos de 1/4 da vida, caso passe e o alvo esteja com menos de 1/4, ela pode rolar força contra a força do alvo na sua próxima rodada, caso ganhe, Sheylon executa o alvo com sua faca, Sheylon pode escolher não realizar o ataque."
+    }
+  ],
+  "habilidades": {
+    "Forca": 0,
+    "Furtividade": 0,
+    "Acrobacia": 0,
+    "Adestramento": 0,
+    "Atletismo": 5,
+    "Atualidades": 0,
+    "Ciencias": 0,
+    "Diplomacia": 0,
+    "Atuação": 0,
+    "Iniciativa": 5,
+    "Intuição": 10,
+    "Luta": 10,
+    "Medicina": 0,
+    "Pilotagem": 0,
+    "Percepcao": 0,
+    "Reflexo": 5,
+    "Sobrevivência": 10,
+    "Tatica": 0,
+    "Tecnologia": 0,
+    "Vontade": 5
+  },
+  "inventario": [
+    {
+      "name": "Faca Pessoal",
+      "tipoDeDano": "Físico - Corte",
+      "dano": "1d5 (+ 1d3 por pontos de força)",
+      "aparencia": "Uma faca de mão Karambit com um cabo de madeira e um detalhe de vidro azul na ponta do cabo",
+      "peso": 0
+    }
+  ],
+  "avatarURL": [
+    "https://media.discordapp.net/attachments/1066920312807104624/1066942967635521596/317731606_719656082897198_7729983681429708929_n.png"
+  ]
+}

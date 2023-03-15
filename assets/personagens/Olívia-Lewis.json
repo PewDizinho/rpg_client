@@ -1,0 +1,52 @@
+{
+  "name": "Olívia Lewis",
+  "idade": 18,
+  "altura": 1.65,
+  "vidaMax": 0,
+  "sanidadeMax": 0,
+  "genero": "Feminino ",
+  "aparencia": "pele branca, olhos negros, Cabelos compridos loiros, estilo soft simple",
+  "historia": "Olivia Lewis nascida em 2004 na Itália, retornaram em 2010 ao país de origem de seus pais (Brasil), após terem concluído que sua presença e a de sua irmã gemea poderiam ser prejudiciais a eles, por serem mafiosos e se envolverem com pessoas perigosas de grande nível. Contudo, para proteger Olivia, seus pais a colocaram em aulas de alongamento dinâmico, e hoje em dia ela mora com sua avó e sua irmã",
+  "pericia": "Bailarina",
+  "preferenciaDeCombate": "Corpo a Corpo",
+  "skills": [
+    {
+      "nome": "Dança da Morte",
+      "descricao": "- Olivia começa a dançar no campo de batalha, conseguindo desviar de ataques de alvo único-alvo (Ou seja, não funciona com danos em area como explosões) durante 1d3 de rodadas, Olivia pode se mover livremente pelo campo durante essas rodadas, não podendo realizar ataques direto (até a última rodada), porém pode rolar vontade pra chamar a atenção e distrair o inimigo"
+    }
+  ],
+  "habilidades": {
+    "Forca": 0,
+    "Furtividade": 5,
+    "Acrobacia": 20,
+    "Adestramento": 0,
+    "Atletismo": 10,
+    "Atualidades": 0,
+    "Ciencias": 0,
+    "Diplomacia": 0,
+    "Atuação": 5,
+    "Iniciativa": 0,
+    "Intuição": 0,
+    "Luta": 0,
+    "Medicina": 0,
+    "Pilotagem": 0,
+    "Percepcao": 0,
+    "Reflexo": 15,
+    "Sobrevivência": 0,
+    "Tatica": 0,
+    "Tecnologia": 0,
+    "Vontade": 0
+  },
+  "inventario": [
+    {
+      "name": "Neko-te",
+      "tipoDeDano": "Físico - Corte",
+      "dano": "1d4/2 (+ 1 por pontos de força)",
+      "aparencia": "Unhas/Garras de Ferro",
+      "peso": 0
+    }
+  ],
+  "avatarURL": [
+    "https://media.discordapp.net/attachments/1066920312807104624/1066946141767356476/321245390_702901368052196_6902592389130736904_n.png"
+  ]
+}

@@ -1,0 +1,71 @@
+import 'dart:convert';
+
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:sizer/sizer.dart';
+
+class CharModel {
+  String? name;
+  String? player;
+
+  CharModel(this.name, this.player);
+
+  Future readJson() async {
+    if (player != null) {
+      var test = jsonDecode(
+          await rootBundle.loadString('assets/personagens/PlayersId.json'));
+      if (test[player] != null) {
+        name ??= (test[player]) as String;
+      } else {
+        name = "Sheylon";
+      }
+    }
+    name?.replaceAll(" ", "-");
+
+    final String response =
+        await rootBundle.loadString('assets/personagens/$name.json');
+    final data = await json.decode(response);
+    return data;
+  }
+
+  Future<Widget> createButton() async {
+    await readJson();
+    return Container(
+      child: Column(children: [
+        GestureDetector(
+          onTap: () {
+            print('a');
+          },
+          child: SizedBox(
+            width: 60.w,
+            height: 70.h,
+            child: Card(
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: const EdgeInsets.all(10),
+              child: Column(
+                children: [
+                  SizedBox(
+                    width: 60.w,
+                    height: 70.w,
+                    child: Image.asset(
+                      'assets/$name.jpg',
+                      fit: BoxFit.scaleDown,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 1.h,
+                  ),
+                  Column(children: [Text(name!)])
+                ],
+              ),
+            ),
+          ),
+        ),
+      ]),
+    );
+  }
+}

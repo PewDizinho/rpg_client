@@ -1,0 +1,53 @@
+{
+  "name": "Rafaelus Cafaelus",
+  "idade": 54,
+  "altura": 1.54,
+  "vidaMax": 34,
+  "sanidadeMax": 40,
+  "genero": "Masculino",
+  "aparencia": "Homem branco, com uma jaqueta de couro e botas, cabelos loiros longos presos por uma faixa na testa",
+  "historia": "ex escravo drogado capenga da venezuela q teve sua familia inteira vendida por 2 maços de cigarro classic quando tinha apenas 8 anos de idade. Acabou caindo no mundo do crime, passou a vida se virando sozinho, tendo que aprender a se virar sozinho, se aprimorou em utilizar recursos que encontrava para a realização de armas, alimentos e rémedios, tendo pro-eficiência em montar armas rústicas, criar rémedios utilziando ervas, e reconhecimento de frutos nocivos. Executava furtos e roubos para conseguir se manter vivo, tendo uma habilidade furtiva acima da média",
+  "pericia": "Ladrão, Herbalista",
+  "preferenciaDeCombate": "Corpo a corpo",
+  "skills": [
+    {
+      "nome": "Abraço Sombrio",
+      "descricao": "- Caso tenha realize um ataque sem ser percebido pelo adversário, ganha 1d4 a mais de dano (Corpo a Corpo: 1d4, Distância: 1d3), e +6 no d20 para acerto, deve rodar furtividade contra a percepção do alvo, caso ganhe, rola um d20 pra realizar o ataque. "
+    }
+  ],
+  "habilidades": {
+    "Forca": 0,
+    "Furtividade": 0,
+    "Agilidade": 10,
+    "Acrobacia": 0,
+    "Adestramento": 5,
+    "Atletismo": 0,
+    "Atualidades": 0,
+    "Ciencias": 0,
+    "Diplomacia": 0,
+    "Atuação": 0,
+    "Iniciativa": 0,
+    "Intuição": 5,
+    "Luta": 0,
+    "Medicina": 10,
+    "Pilotagem": 0,
+    "Percepcao": 5,
+    "Reflexo": 5,
+    "Sobrevivência": 10,
+    "Tatica": 0,
+    "Tecnologia": 0,
+    "Vontade": 10
+  },
+  "inventario": [
+    {
+      "name": "Facão Pessoal",
+      "tipoDeDano": "Físico - Corte",
+      "dano": "1d4 + 1 (1d3 por ponto de força)",
+      "aparencia": "Um facão com uma lâmina preta, o Cabo é feito de madeira, talhado a mão",
+      "peso": 0
+    }
+  ],
+  "avatarURL": [
+    "https://media.discordapp.net/attachments/1066920312807104624/1066941969365991434/312295753_414112204233589_8348022841886031965_n.png?width=469&height=469"
+  ]
+}

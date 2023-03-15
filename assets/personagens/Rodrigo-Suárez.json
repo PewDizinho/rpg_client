@@ -1,0 +1,52 @@
+{
+  "name": "Rodrigo Suárez",
+  "idade": 38,
+  "altura": 1.65,
+  "vidaMax": 30,
+  "sanidadeMax": 60,
+  "genero": "Masculino",
+  "aparencia": "Um homem branco e loiro que utiliza um sobretudo marrom e um óculos quadrado",
+  "historia": "Rodrigo é um estudante de história fascinado por mitologias e qualquer história que seja fora da realidade, perdeus seus pais em um acidênte quando criança e viveu em um orfanado durante seus primeiros 15 anos de vida, onde fugiu e comecou a viver na rua",
+  "pericia": "Historiador",
+  "preferenciaDeCombate": "Arma de fogo",
+  "skills": [
+    {
+      "nome": "Pesquisador Nato [PASSIVA]",
+      "descricao": "- Essa habilidade é ativada passivamente, fazendo com que Rodrigo tenha vantagem em dados de ATUALIDADES, DIPLOMACIA, PERCEPÇÃO, TÁTICA e TECNOLOGIA"
+    }
+  ],
+  "habilidades": {
+    "Forca": 0,
+    "Furtividade": 5,
+    "Acrobacia": 0,
+    "Adestramento": 0,
+    "Atletismo": 0,
+    "Atualidades": 5,
+    "Ciencias": 5,
+    "Diplomacia": 5,
+    "Atuação": 0,
+    "Iniciativa": 0,
+    "Intuição": 10,
+    "Luta": 0,
+    "Medicina": 0,
+    "Pilotagem": 5,
+    "Percepcao": 5,
+    "Reflexo": 0,
+    "Sobrevivência": 0,
+    "Tática": 10,
+    "Tecnologia": 5,
+    "Vontade": 0
+  },
+  "inventario": [
+    {
+      "name": "Pistola de Bolso Baretta 21 .22 Pessoal",
+      "tipoDeDano": "Projétil - Impacto",
+      "dano": "1d8 dano",
+      "aparencia": "Uma pistola de bolso Baretta 21 .22 com um \"R\" talhado em fonte Medieval",
+      "peso": 0
+    }
+  ],
+  "avatarURL": [
+    "https://media.discordapp.net/attachments/1066920312807104624/1066944210713980938/317729615_709886347426746_7374703147162559043_n.png"
+  ]
+}
