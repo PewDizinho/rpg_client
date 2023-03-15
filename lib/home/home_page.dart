@@ -1,26 +1,40 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:rpg_client/home/char_main_page.dart';
 import 'package:rpg_client/util/char_model.dart';
 import 'package:sizer/sizer.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage({key});
 
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  var nomes = [
-    "rafael",
-    "ana",
-    "gustavo",
-    "yasmin",
-    "nycolle",
-    "nathaly"
-  ];
+  var nomes = ["rafael", "ana", "gustavo", "yasmin", "nycolle", "nathaly"];
   Widget char = Container();
+
+  @override
+  void initState() {
+    super.initState();
+    a();
+  }
+
+  a() async {
+    var charName = await CharModel(null, null).checkIfPlayerAlredyChoose();
+    if (charName != null) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => CharMainPage(
+                  charName,
+                )),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -4,11 +4,14 @@
   "altura": 1.54,
   "vidaMax": 34,
   "sanidadeMax": 40,
+  "vidaAtual": 34,
+  "sanidadeAtual": 40,
   "genero": "Masculino",
   "aparencia": "Homem branco, com uma jaqueta de couro e botas, cabelos loiros longos presos por uma faixa na testa",
   "historia": "ex escravo drogado capenga da venezuela q teve sua familia inteira vendida por 2 maços de cigarro classic quando tinha apenas 8 anos de idade. Acabou caindo no mundo do crime, passou a vida se virando sozinho, tendo que aprender a se virar sozinho, se aprimorou em utilizar recursos que encontrava para a realização de armas, alimentos e rémedios, tendo pro-eficiência em montar armas rústicas, criar rémedios utilziando ervas, e reconhecimento de frutos nocivos. Executava furtos e roubos para conseguir se manter vivo, tendo uma habilidade furtiva acima da média",
   "pericia": "Ladrão, Herbalista",
   "preferenciaDeCombate": "Corpo a corpo",
+  "efeitos": [],
   "skills": [
     {
       "nome": "Abraço Sombrio",

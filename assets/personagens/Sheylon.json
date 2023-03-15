@@ -4,11 +4,14 @@
   "altura": 1.75,
   "vidaMax": 40,
   "sanidadeMax": 50,
+  "vidaAtual": 40,
+  "sanidadeAtual": 50,
   "genero": "Feminino",
   "aparencia": "Uma versão feminina do Ekko com estilo cyberpunk",
   "historia": "Sheylon nasceu no suburbio do RJ, no meio da favela ela creceu cercada pelo crime e violencia, o que a fez aprender a lutar pra se proteger e sobreviver, aos 12 anos acabou se envolvendo com o trafico e aos 14 passou a usar. Com 16, perdida e cansada da vida que levava, sheylon se encontrou em um centro de artes marcias o que a fez mudar de vida, conseguiu sair da favela e começou a morar e treinar na academia em troca de limpeza. Porém sua saida do trafico nao foi algo aceito pelo dono do morro e depois de 4 anos escondida no centro de treinamento o chefe a encontrou e a levou de volta ao morro. Como nao haviam a vista por 4 anos, as pessoas no morro nao sabiam que Sheylon tinha um talento extraordinario para artes marciais. Essa vantagem, junto com sua flexibilidade e agilidade a permitiram conseguir escapar em um momento que ninguem estava vendo. Sheylon foi direto para a rodoviaria e pegou o primeiro onibus que apareceu. Ela acabou indo para Curitiba, com nada alem de um punhado de dinheiro que havia pego dos traficantes antes de sair. Agora ela estava tentando se encaixar a nova cidade.",
   "pericia": "Artes Marciais",
   "preferenciaDeCombate": "Corpo a corpo",
+  "efeitos": [],
   "skills": [
     {
       "nome": "Golpe de Misericórdia",

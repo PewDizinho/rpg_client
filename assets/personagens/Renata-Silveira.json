@@ -4,11 +4,14 @@
   "altura": 1.78,
   "vidaMax": 70,
   "sanidadeMax": 25,
+  "vidaAtual": 70,
+  "sanidadeAtual": 25,
   "genero": "Feminino",
   "aparencia": "Possui aparência robusta. Tem cabelos compridos, muito ondulados e volumosos de cor castanha com subtom mais avermelhado (como um cobre). Usa sempre Baggy jeans os jardineiras com blusas de manga curta simples com estampas (principalmente de bandas). Usa galochas, botas (não as chiques ou com salto, daquelas estilo de exército e coisas do gênero) ou butinas. Possui sempre uma mochila pequena onde carrega seus fones e alguns materiais como seus pequenos vidros e plásticos (ela adora coletar amostras de plantas e mudas para seu jardim e pesquisas), quando ela sai para explorar sempre possui seu cinto com suas ferramentas maiores de jardinagem, tesoura, pá pequena e etc. Varia entre usar cabelo solto e preso em um rabo de cavalo alto.",
   "historia": "Ela se formou em Biologia e fez pós-graduações com foco em botânica e toxilogia. Antes de começarem seus estágios para a faculdade ela trabalhou como jardineira de sucesso em grandes residências com exuberantes jardins. Futuramente fez estágios em laboratórios e estufas de pesquisa sobre toxinas e os variados efeitos das plantas.  Acabou de terminar sua última formação e está aplicando para trabalhos em grandes estufas de pesquisas para criação de novas drogas (lícitas). Em seu tempo livre ela explora áreas verdes, cuida de seu jardim e treina em sua bateria, ela adora rock. Apesar de sua aparência robusta, devido a sua criação carinhosa e amorosa, ela é extremamente delicada e bondosa. Ela possui pavor de oceano e aguas profundas devido à um acidente na sua infância em que ela e seu irmão se afogaram, e apenas ela sobreviveu. Seu pai não aguentou lidar com a morte de seu irmão e acabou se afastando da família e divorciando da mãe. Além de seu grande medo, esse acidente teve consequências positivas pois agora ela é uma pessoa protetora. (Ela possui bastante força física, mas n sabe lutar, apenas é forte)",
   "pericia": "Herbalista, Medicina",
   "preferenciaDeCombate": "Corpo a corpo",
+  "efeitos": [],
   "skills": [
     {
       "nome": "Tratamento Natural [Passiva]",

@@ -4,11 +4,14 @@
   "altura": 1.6,
   "vidaMax": 50,
   "sanidadeMax": 35,
+  "vidaAtual": 50,
+  "sanidadeAtual": 35,
   "genero": "Feminino",
   "aparencia": "Estilo puxado para o y2K ou Acubi",
   "historia": "Sophie Lewis nascida em 2005 na Itália, retornaram em 2011 ao país de origem de seus pais (Brasil), após terem concluído que sua presença e a de sua irmã gemea poderiam ser prejudiciais a eles, por serem mafiosos e se envolverem com pessoas perigosas de grande nível. Contudo, para proteger Sophie, seus pais a colocaram em aulas de Artes Marciais, e hoje em dia ela mora com sua avó",
   "pericia": "Professora de luta",
   "preferenciaDeCombate": "Corpo a corpo (Arma Branca: Soco inglês)",
+  "efeitos": [],
   "skills": [
     {
       "nome": "Foco Supremo",

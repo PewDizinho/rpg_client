@@ -4,11 +4,14 @@
   "altura": 1.65,
   "vidaMax": 30,
   "sanidadeMax": 60,
+  "vidaAtual": 30,
+  "sanidadeAtual": 60,
   "genero": "Masculino",
   "aparencia": "Um homem branco e loiro que utiliza um sobretudo marrom e um óculos quadrado",
   "historia": "Rodrigo é um estudante de história fascinado por mitologias e qualquer história que seja fora da realidade, perdeus seus pais em um acidênte quando criança e viveu em um orfanado durante seus primeiros 15 anos de vida, onde fugiu e comecou a viver na rua",
   "pericia": "Historiador",
   "preferenciaDeCombate": "Arma de fogo",
+  "efeitos": [],
   "skills": [
     {
       "nome": "Pesquisador Nato [PASSIVA]",

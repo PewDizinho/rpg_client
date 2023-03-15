@@ -8,7 +8,7 @@ void main() {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark(),
-        home: HomePage(),
+        home: const HomePage(),
       );
     },
   ));
