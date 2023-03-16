@@ -1,5 +1,6 @@
 {
   "name": "Renata Silveira",
+  "player": "Ana",
   "idade": 28,
   "altura": 1.78,
   "vidaMax": 70,
@@ -26,6 +27,7 @@
     "Atletismo": 0,
     "Atualidades": 0,
     "Ciencias": 20,
+
     "Diplomacia": 0,
     "Atuação": 0,
     "Iniciativa": 0,

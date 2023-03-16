@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rpg_client/home/home_page.dart';
+import 'package:rpg_client/home/subPages/habilidades.dart';
+import 'package:rpg_client/home/subPages/informacoes.dart';
 import 'package:rpg_client/util/char_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
@@ -57,8 +59,8 @@ class _CharMainPageState extends State<CharMainPage> {
   };
 
   void initInformation() async {
-    setState(() async {
-      info = (await CharModel(widget.charName, null).readJson());
+    info = (await CharModel(widget.charName, null).readJson());
+    setState(() {
       if (info["efeitos"] != null) {
         var tempInfo = (info["efeitos"] as List);
         if (tempInfo.isNotEmpty) {
@@ -80,7 +82,6 @@ class _CharMainPageState extends State<CharMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber,
       body: Container(
         constraints: const BoxConstraints.expand(),
         decoration: const BoxDecoration(
@@ -191,13 +192,27 @@ class _CharMainPageState extends State<CharMainPage> {
                 const Spacer(flex: 2),
                 Column(
                   children: [
-                    _getButton(
-                        context, Icons.swipe_up_rounded, "Informações", () {}),
+                    _getButton(context, Icons.swipe_up_rounded, "Informações",
+                        () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Informacoes(info),
+                        ),
+                      );
+                    }),
                     SizedBox(
                       height: 5.h,
                     ),
                     _getButton(context, Icons.swipe_up_rounded, " Habilidades ",
-                        () {}),
+                        () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Habilidades(info),
+                        ),
+                      );
+                    }),
                   ],
                 ),
                 const Spacer(flex: 1),
