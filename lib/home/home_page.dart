@@ -19,12 +19,14 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    a();
+    CharModel().init("", "Gustavo").then((value) => a());
   }
 
   a() async {
-    var charName = await CharModel(null, null).checkIfPlayerAlredyChoose();
-    if (charName != null) {
+    var charName = (await CharModel().checkIfPlayerAlredyChoose());
+    if (charName!.isNotEmpty) {
+      CharModel().init(charName, '');
+
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -56,10 +58,8 @@ class _HomePageState extends State<HomePage> {
                   onChanged: ((value) {
                     if (nomes.contains(value.toLowerCase())) {
                       setState(() {
-                        CharModel(null, value.toLowerCase())
-                            .createButton(context)
-                            .then((value) {
-                          char = value;
+                        CharModel().init('', value.toLowerCase()).then((v) {
+                          char = CharModel().createButton(context);
                         });
                       });
                     } else {

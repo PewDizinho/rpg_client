@@ -14,13 +14,7 @@ class CharMainPage extends StatefulWidget {
 }
 
 class _CharMainPageState extends State<CharMainPage> {
-  @override
-  void initState() {
-    super.initState();
-    initInformation();
-  }
-
-  var info = {
+  Map info = {
     "name": "Carregando!",
     "idade": 0,
     "altura": 0,
@@ -58,23 +52,28 @@ class _CharMainPageState extends State<CharMainPage> {
     "avatarURL": [""]
   };
 
-  void initInformation() async {
-    info = (await CharModel(widget.charName, null).readJson());
-    setState(() {
-      if (info["efeitos"] != null) {
-        var tempInfo = (info["efeitos"] as List);
-        if (tempInfo.isNotEmpty) {
-          var e = "";
-          for (var i = 0; i < (tempInfo.length); i++) {
-            if (i + 1 == tempInfo.length) {
-              e += tempInfo[i];
-            } else {
-              e += "${tempInfo[i]},\n";
+  @override
+  void initState() {
+    super.initState();
+    CharModel().readJson().then((value) {
+      print(value);
+      setState(() {
+        info = value;
+        if (info["efeitos"] != null) {
+          var tempInfo = (info["efeitos"] as List);
+          if (tempInfo.isNotEmpty) {
+            var e = "";
+            for (var i = 0; i < (tempInfo.length); i++) {
+              if (i + 1 == tempInfo.length) {
+                e += tempInfo[i];
+              } else {
+                e += "${tempInfo[i]},\n";
+              }
             }
+            efeitos = "Efeitos atuais: $e.";
           }
-          efeitos = "Efeitos atuais: $e.";
         }
-      }
+      });
     });
   }
 

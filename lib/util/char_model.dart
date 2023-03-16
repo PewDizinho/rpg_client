@@ -9,18 +9,34 @@ import 'package:sizer/sizer.dart';
 class CharModel {
   String? name;
   String? player;
-  var info;
-  CharModel(this.name, this.player);
+  late Map info;
+  var db;
+  Future<bool> init(name, player) async {
+    this.name = name;
+    this.player = player;
+    db = await SharedPreferences.getInstance();
+    await readJson();
+    return true;
+  }
+
+  static final CharModel _charModel = CharModel._internal();
+  factory CharModel() {
+    return _charModel;
+  }
+
+  CharModel._internal();
 
   Future readJson() async {
+    print('Player: $player');
+    print('Name: $name');
     if (player != null) {
       var test = jsonDecode(
           await rootBundle.loadString('assets/personagens/PlayersId.json'));
-      if (test[player] != null) {
-        name ??= (test[player]) as String;
+      if (test[player!.toLowerCase()] != null) {
+        name = test[player!.toLowerCase()].replaceAll(" ", "-");
       }
     }
-    name?.replaceAll(" ", "-");
+
     final String response =
         await rootBundle.loadString('assets/personagens/$name.json');
     final data = await json.decode(response);
@@ -28,17 +44,18 @@ class CharModel {
     return data;
   }
 
-  Future<String?> checkIfPlayerAlredyChoose() async {
-    final db = await SharedPreferences.getInstance();
-    return db.getString("char");
+  getData() {
+    return info;
   }
 
-  Future<Widget> createButton(BuildContext context) async {
-    await readJson();
+  checkIfPlayerAlredyChoose() {
+    return db.getString("char") ?? "";
+  }
+
+  Widget createButton(BuildContext context) {
     return Column(children: [
       GestureDetector(
-        onTap: () async {
-          final db = await SharedPreferences.getInstance();
+        onTap: () {
           db.setString("char", name!);
           Navigator.pushAndRemoveUntil(
               context,
