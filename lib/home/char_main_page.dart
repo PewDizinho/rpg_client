@@ -152,34 +152,46 @@ class _CharMainPageState extends State<CharMainPage> {
                   Text(
                     'Nome: ${info["name"]}',
                     style: TextStyle(
-                        fontSize: 11.sp, fontFamily: 'DroidSans-bold'),
+                        fontSize: 15.sp, fontFamily: 'DroidSans-bold'),
+                  ),
+                  SizedBox(
+                    height: 1.h,
                   ),
                   Text(
                     'Idade: ${info["idade"]}',
                     style: TextStyle(
-                      fontSize: 11.sp,
+                      fontSize: 15.sp,
                       fontFamily: 'DroidSans-bold',
                     ),
+                  ),
+                  SizedBox(
+                    height: 1.h,
                   ),
                   Text(
                     'Vida: ${info["vidaAtual"]}/${info["vidaMax"]}',
                     style: TextStyle(
-                      fontSize: 11.sp,
+                      fontSize: 15.sp,
                       fontFamily: 'DroidSans-bold',
                     ),
+                  ),
+                  SizedBox(
+                    height: 1.h,
                   ),
                   Text(
                     'Sanidade: ${info["sanidadeAtual"]}/${info["sanidadeMax"]}',
                     style: TextStyle(
-                      fontSize: 11.sp,
+                      fontSize: 15.sp,
                       fontFamily: 'DroidSans-bold',
                     ),
+                  ),
+                  SizedBox(
+                    height: 1.h,
                   ),
                   Text(
                     efeitos,
                     overflow: TextOverflow.visible,
                     style: TextStyle(
-                      fontSize: 11.sp,
+                      fontSize: 15.sp,
                       fontFamily: 'DroidSans-bold',
                     ),
                   ),

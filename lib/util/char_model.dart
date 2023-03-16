@@ -89,10 +89,25 @@ class CharModel {
                 ),
                 Column(children: [
                   Text('Nome: ${info["name"]}'),
+                  SizedBox(
+                    height: 1.h,
+                  ),
                   Text('idade: ${info["idade"]}m'),
+                  SizedBox(
+                    height: 1.h,
+                  ),
                   Text('Altura: ${info["altura"]}'),
+                  SizedBox(
+                    height: 1.h,
+                  ),
                   Text('Perícia: ${info["pericia"]}'),
+                  SizedBox(
+                    height: 1.h,
+                  ),
                   Text('Gênero: ${info["genero"]}'),
+                  SizedBox(
+                    height: 1.h,
+                  ),
                   Text('Combate: ${info["preferenciaDeCombate"]}')
                 ])
               ],
