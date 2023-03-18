@@ -15,7 +15,8 @@
   "efeitos": [],
   "skills": [
     {
-      "nome": "Pesquisador Nato [PASSIVA]",
+      "nome": "Pesquisador Nato",
+      "tipo": "P",
       "descricao": "- Essa habilidade é ativada passivamente, fazendo com que Rodrigo tenha vantagem em dados de ATUALIDADES, DIPLOMACIA, PERCEPÇÃO, TÁTICA e TECNOLOGIA"
     }
   ],

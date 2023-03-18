@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rpg_client/home/home_page.dart';
 import 'package:rpg_client/home/subPages/habilidades.dart';
 import 'package:rpg_client/home/subPages/informacoes.dart';
+import 'package:rpg_client/home/subPages/skills.dart';
 import 'package:rpg_client/util/char_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
@@ -56,7 +57,6 @@ class _CharMainPageState extends State<CharMainPage> {
   void initState() {
     super.initState();
     CharModel().readJson().then((value) {
-      print(value);
       setState(() {
         info = value;
         if (info["efeitos"] != null) {
@@ -113,7 +113,7 @@ class _CharMainPageState extends State<CharMainPage> {
                 icon: Icon(
                   Icons.delete_forever,
                   size: 10.sp,
-                  color: Color.fromARGB(255, 255, 0, 0),
+                  color: const Color.fromARGB(255, 255, 0, 0),
                   shadows: const [
                     BoxShadow(
                       blurRadius: 12.0,
@@ -229,8 +229,16 @@ class _CharMainPageState extends State<CharMainPage> {
                 const Spacer(flex: 1),
                 Column(
                   children: [
-                    _getButton(context, Icons.swipe_up_rounded,
-                        "      Skills      ", () {}),
+                    _getButton(
+                        context, Icons.swipe_up_rounded, "      Skills      ",
+                        () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Skills(info),
+                        ),
+                      );
+                    }),
                     SizedBox(
                       height: 5.h,
                     ),

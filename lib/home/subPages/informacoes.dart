@@ -24,8 +24,8 @@ class Informacoes extends StatelessWidget {
         efeitos = "Efeitos atuais: $e.";
       }
     }
-    return Scaffold(
-      body: Container(
+    return Drawer(
+      child: Container(
         constraints: const BoxConstraints.expand(),
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -52,7 +52,7 @@ class Informacoes extends StatelessWidget {
                         width: 40.w,
                         height: 50.w,
                         child: Image.asset(
-                          'assets/${charName}.jpg',
+                          'assets/$charName.jpg',
                           fit: BoxFit.scaleDown,
                         ),
                       ),
@@ -65,8 +65,11 @@ class Informacoes extends StatelessWidget {
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                   Text(
                     'Nome: ${charInfo["name"]}',
+                    overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                        fontSize: 11.sp, fontFamily: 'DroidSans-bold'),
+                        overflow: TextOverflow.ellipsis,
+                        fontSize: 12.sp,
+                        fontFamily: 'DroidSans-bold'),
                   ),
                   SizedBox(
                     height: 1.h,
@@ -74,7 +77,7 @@ class Informacoes extends StatelessWidget {
                   Text(
                     'Idade: ${charInfo["idade"]}',
                     style: TextStyle(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontFamily: 'DroidSans-bold',
                     ),
                   ),
@@ -84,7 +87,7 @@ class Informacoes extends StatelessWidget {
                   Text(
                     'Vida: ${charInfo["vidaAtual"]}/${charInfo["vidaMax"]}',
                     style: TextStyle(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontFamily: 'DroidSans-bold',
                     ),
                   ),
@@ -94,7 +97,7 @@ class Informacoes extends StatelessWidget {
                   Text(
                     'Sanidade: ${charInfo["sanidadeAtual"]}/${charInfo["sanidadeMax"]}',
                     style: TextStyle(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontFamily: 'DroidSans-bold',
                     ),
                   ),
@@ -105,7 +108,7 @@ class Informacoes extends StatelessWidget {
                     efeitos,
                     overflow: TextOverflow.visible,
                     style: TextStyle(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontFamily: 'DroidSans-bold',
                     ),
                   ),
@@ -115,7 +118,7 @@ class Informacoes extends StatelessWidget {
                   Text(
                     'Gênero: ${charInfo["genero"]}',
                     style: TextStyle(
-                        fontSize: 11.sp, fontFamily: 'DroidSans-bold'),
+                        fontSize: 12.sp, fontFamily: 'DroidSans-bold'),
                   ),
                   SizedBox(
                     height: 1.h,
@@ -123,7 +126,7 @@ class Informacoes extends StatelessWidget {
                   Text(
                     'Perícia: ${charInfo["pericia"]}',
                     style: TextStyle(
-                        fontSize: 11.sp, fontFamily: 'DroidSans-bold'),
+                        fontSize: 12.sp, fontFamily: 'DroidSans-bold'),
                   ),
                 ]),
               ],
@@ -142,11 +145,6 @@ class Informacoes extends StatelessWidget {
                     height: 1.h,
                   ),
                   Text(
-                    'Aparência: ${charInfo["aparencia"]}',
-                    style: TextStyle(
-                        fontSize: 15.sp, fontFamily: 'DroidSans-bold'),
-                  ),
-                  Text(
                     'Player: ${charInfo["player"]}',
                     style: TextStyle(
                         fontSize: 15.sp, fontFamily: 'DroidSans-bold'),
@@ -154,12 +152,32 @@ class Informacoes extends StatelessWidget {
                   SizedBox(
                     height: 1.h,
                   ),
-                  Text(
-                    'História: ${charInfo["historia"]}',
-                    style: TextStyle(
-                        overflow: TextOverflow.clip,
-                        fontSize: 15.sp,
-                        fontFamily: 'DroidSans-bold'),
+                  SizedBox(
+                    height: 10.h,
+                    width: 90.w,
+                    child: ListView(children: [
+                      Text(
+                        'Aparência: ${charInfo["aparencia"]}',
+                        style: TextStyle(
+                            fontSize: 15.sp, fontFamily: 'DroidSans-bold'),
+                      ),
+                    ]),
+                  ),
+                  SizedBox(
+                    height: 1.h,
+                  ),
+                  SizedBox(
+                    height: 40.h,
+                    width: 90.w,
+                    child: ListView(children: [
+                      Text(
+                        'História: ${charInfo["historia"]}',
+                        style: TextStyle(
+                            overflow: TextOverflow.fade,
+                            fontSize: 15.sp,
+                            fontFamily: 'DroidSans-bold'),
+                      ),
+                    ]),
                   ),
                   SizedBox(
                     height: 1.h,

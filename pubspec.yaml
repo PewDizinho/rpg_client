@@ -70,6 +70,10 @@ flutter:
     - assets/Mestre.jpg
     - assets/
     - assets/personagens/
+    - assets/skills/
+    - assets/skills/icons/
+
+
 
   fonts:
     - family: Stentiga

@@ -26,7 +26,6 @@ class _HomePageState extends State<HomePage> {
     var charName = (await CharModel().checkIfPlayerAlredyChoose());
     if (charName!.isNotEmpty) {
       CharModel().init(charName, '');
-
       Navigator.push(
         context,
         MaterialPageRoute(

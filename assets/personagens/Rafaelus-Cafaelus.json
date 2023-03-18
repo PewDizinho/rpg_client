@@ -16,6 +16,7 @@
   "skills": [
     {
       "nome": "Abraço Sombrio",
+      "tipo": "A",
       "descricao": "- Caso tenha realize um ataque sem ser percebido pelo adversário, ganha 1d4 a mais de dano (Corpo a Corpo: 1d4, Distância: 1d3), e +6 no d20 para acerto, deve rodar furtividade contra a percepção do alvo, caso ganhe, rola um d20 pra realizar o ataque. "
     }
   ],

@@ -16,6 +16,7 @@
   "skills": [
     {
       "nome": "Dança da Morte",
+      "tipo": "A",
       "descricao": "- Olivia começa a dançar no campo de batalha, conseguindo desviar de ataques de alvo único-alvo (Ou seja, não funciona com danos em area como explosões) durante 1d3 de rodadas, Olivia pode se mover livremente pelo campo durante essas rodadas, não podendo realizar ataques direto (até a última rodada), porém pode rolar vontade pra chamar a atenção e distrair o inimigo"
     }
   ],
