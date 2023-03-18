@@ -12,7 +12,7 @@ class Habilidades extends StatefulWidget {
 
 class _HabilidadesState extends State<Habilidades> {
   void rollThis(String type) {
-    Util().playDice(20, (widget.info['habilidades'][type]));
+    Util().playDice(20, (widget.info['habilidades'][type]), context);
   }
 
   @override
@@ -524,7 +524,7 @@ class _HabilidadesState extends State<Habilidades> {
                             flex: 1,
                           ),
                           Text(
-                            widget.info["habilidades"]["Tática"].toString(),
+                            widget.info["habilidades"]["Tatica"].toString(),
                             style: TextStyle(
                                 fontSize: 15.sp, fontFamily: 'stentiga'),
                           ),
