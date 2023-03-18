@@ -15,7 +15,8 @@
   "efeitos": [],
   "skills": [
     {
-      "nome": "Tratamento Natural [Passiva]",
+      "nome": "Tratamento Natural",
+      "tipo": "P",
       "descricao": "- Renata consegue tratar envenenamentos, e criar rémedios que dão buff em: Velocidade, Força, Agilidade e Visão rodando 1d8, caso tire um número abaixo da DT, o efeito pode ser outro"
     }
   ],

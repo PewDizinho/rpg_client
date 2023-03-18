@@ -16,6 +16,7 @@
   "skills": [
     {
       "nome": "Golpe de Misericórdia",
+      "tipo": "A",
       "descricao": "- Sheylon gasta uma rodada analisando o alvo, então roda 1d20 para ver se o alvo está com menos de 1/4 da vida, caso passe e o alvo esteja com menos de 1/4, ela pode rolar força contra a força do alvo na sua próxima rodada, caso ganhe, Sheylon executa o alvo com sua faca, Sheylon pode escolher não realizar o ataque."
     }
   ],

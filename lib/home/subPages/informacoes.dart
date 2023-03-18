@@ -167,7 +167,7 @@ class Informacoes extends StatelessWidget {
                     height: 1.h,
                   ),
                   SizedBox(
-                    height: 40.h,
+                    height: 30.h,
                     width: 90.w,
                     child: ListView(children: [
                       Text(

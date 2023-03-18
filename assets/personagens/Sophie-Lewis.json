@@ -16,6 +16,7 @@
   "skills": [
     {
       "nome": "Foco Supremo",
+      "tipo": "A",
       "descricao": "- Caso um inimigo esteja Distraído/Prestando atenção em outro alvo, Sophie pode chegar por trás do inimigo e o jogando no chão, o alvo fica CAÍDO e IMOBILIZADO enquanto Sophie o segura, o alvo deve rodar um dado de força contra Sophie para se libertar (ou utilizar algum outro método criativo, estando propenso ao julgamento do Mestre, como realizar um ataque em área), o alvo fica VULNERÁVEL durante esse tempo"
     }
   ],
