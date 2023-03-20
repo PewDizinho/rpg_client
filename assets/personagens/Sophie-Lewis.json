@@ -44,11 +44,13 @@
   },
   "inventario": [
     {
+      "short-name": "Soco Inglês",
       "name": "Soco Inglês Pessoal",
       "tipoDeDano": "Físico - Impacto",
       "dano": "1d3 (+ 1 por pontos de força)",
       "aparencia": "Soco inglês preto, com um entalhe de caveira",
-      "peso": 0
+      "peso": 0,
+      "tipo": "Arma"
     }
   ],
   "avatarURL": [

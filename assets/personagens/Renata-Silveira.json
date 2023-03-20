@@ -28,7 +28,6 @@
     "Atletismo": 0,
     "Atualidades": 0,
     "Ciencias": 20,
-
     "Diplomacia": 0,
     "Atuação": 0,
     "Iniciativa": 0,
@@ -45,11 +44,13 @@
   },
   "inventario": [
     {
+      "short-name": "Kit",
       "name": "Kit de plantas",
       "tipoDeDano": "Suporte",
       "dano": "Cura 1d8 se aplicado corretamente",
       "aparencia": "Uma caixa cheia de produtos naturais que, após manipulados da forma correta pela Renata, pode realizar curas ou outros efeitos",
-      "peso": 0
+      "peso": 0,
+      "tipo": "Arma"
     }
   ],
   "avatarURL": [

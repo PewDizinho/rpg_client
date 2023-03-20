@@ -1,28 +1,26 @@
-
-import 'package:rpg_client/home/subPages/skills_info.dart';
 import 'package:flutter/material.dart';
+import 'package:rpg_client/home/subPages/item_info.dart';
 import 'package:sizer/sizer.dart';
 
-class Skills extends StatefulWidget {
+class Inventory extends StatefulWidget {
   final Map info;
-  const Skills(this.info, {super.key});
+  const Inventory(this.info, {super.key});
 
   @override
-  State<Skills> createState() => _SkillsState();
+  State<Inventory> createState() => _InventoryState();
 }
 
-class _SkillsState extends State<Skills> {
+class _InventoryState extends State<Inventory> {
   List<Widget> createList() {
     List<Widget> list = [];
 
-    // ignore: unused_local_variable
-    for (var i in widget.info['skills']) {
+    for (var i in widget.info['inventario']) {
       list.add(InkWell(
         onTap: () {
           Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => SkillsInfo(i, widget.info['name'])),
+                builder: (context) => ItemInfo(i, widget.info['name'])),
           );
         },
         splashColor: Colors.black,
@@ -31,7 +29,7 @@ class _SkillsState extends State<Skills> {
           child: Row(
             children: [
               Text(
-                i['nome'],
+                i['short-name'],
                 style: TextStyle(fontSize: 15.sp, fontFamily: 'stentiga'),
               ),
               const Spacer(
@@ -64,7 +62,7 @@ class _SkillsState extends State<Skills> {
               height: 5.h,
             ),
             Text(
-              'Skills',
+              'Inventário',
               style: TextStyle(fontSize: 20.sp, fontFamily: 'stentiga'),
             ),
             SizedBox(

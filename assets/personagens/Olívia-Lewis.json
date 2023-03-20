@@ -44,11 +44,13 @@
   },
   "inventario": [
     {
+      "short-name": "Neko-te",
       "name": "Neko-te",
       "tipoDeDano": "Físico - Corte",
       "dano": "1d4/2 (+ 1 por pontos de força)",
       "aparencia": "Unhas/Garras de Ferro",
-      "peso": 0
+      "peso": 0,
+      "tipo": "Arma"
     }
   ],
   "avatarURL": [

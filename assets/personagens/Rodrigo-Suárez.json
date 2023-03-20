@@ -44,11 +44,22 @@
   },
   "inventario": [
     {
+      "short-name": "Pistola",
       "name": "Pistola de Bolso Baretta 21 .22 Pessoal",
       "tipoDeDano": "Projétil - Impacto",
-      "dano": "1d8 dano",
+      "dano": "1d8",
       "aparencia": "Uma pistola de bolso Baretta 21 .22 com um \"R\" talhado em fonte Medieval",
-      "peso": 0
+      "peso": 0,
+      "tipo": "Arma"
+    },
+    {
+      "short-name": "Faca",
+      "name": "Faca Pessoal",
+      "tipoDeDano": "Físico - Corte",
+      "dano": "1d5 (+ 1d3 por pontos de força)",
+      "aparencia": "Uma faca de mão Karambit com um cabo de madeira e um detalhe de vidro azul na ponta do cabo",
+      "peso": 0,
+      "tipo": "Arma"
     }
   ],
   "avatarURL": [

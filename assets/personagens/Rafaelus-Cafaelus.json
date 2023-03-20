@@ -45,11 +45,13 @@
   },
   "inventario": [
     {
+      "short-name": "Facão",
       "name": "Facão Pessoal",
       "tipoDeDano": "Físico - Corte",
       "dano": "1d4 + 1 (1d3 por ponto de força)",
       "aparencia": "Um facão com uma lâmina preta, o Cabo é feito de madeira, talhado a mão",
-      "peso": 0
+      "peso": 0,
+      "tipo": "Arma"
     }
   ],
   "avatarURL": [

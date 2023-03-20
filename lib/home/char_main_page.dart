@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rpg_client/home/home_page.dart';
 import 'package:rpg_client/home/subPages/habilidades.dart';
 import 'package:rpg_client/home/subPages/informacoes.dart';
+import 'package:rpg_client/home/subPages/inventory.dart';
 import 'package:rpg_client/home/subPages/skills.dart';
 import 'package:rpg_client/util/char_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -242,8 +243,14 @@ class _CharMainPageState extends State<CharMainPage> {
                     SizedBox(
                       height: 5.h,
                     ),
-                    _getButton(context, Icons.swipe_up_rounded,
-                        "  Inventário  ", () {}),
+                    _getButton(
+                        context, Icons.swipe_up_rounded, "  Inventário  ", () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Inventory(info),
+                          ));
+                    }),
                   ],
                 ),
                 const Spacer(flex: 2),
