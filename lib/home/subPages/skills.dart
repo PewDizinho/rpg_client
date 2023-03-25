@@ -1,4 +1,3 @@
-
 import 'package:rpg_client/home/subPages/skills_info.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';

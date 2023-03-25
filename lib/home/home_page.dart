@@ -6,7 +6,7 @@ import 'package:rpg_client/util/char_model.dart';
 import 'package:sizer/sizer.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -26,6 +26,7 @@ class _HomePageState extends State<HomePage> {
     var charName = (await CharModel().checkIfPlayerAlredyChoose());
     if (charName!.isNotEmpty) {
       CharModel().init(charName, '');
+      // ignore: use_build_context_synchronously
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -53,7 +54,6 @@ class _HomePageState extends State<HomePage> {
               child: SizedBox(
                 width: 50.w,
                 child: TextField(
-                  onEditingComplete: () {},
                   onChanged: ((value) {
                     if (nomes.contains(value.toLowerCase())) {
                       setState(() {
